@@ -1,3 +1,48 @@
 [
-  {"id":"ssl","title":"Founder & Executive Director","organization":"Small Systems Lab","start":"2023","summary":"Public-interest technology, accessibility, AI and research."}
+  {
+    "id": "ssl-founder",
+    "organizationId": "ssl",
+    "role": "Founder & Executive Director",
+    "start": "2023",
+    "end": null,
+    "tags": [
+      "ai",
+      "accessibility",
+      "research",
+      "leadership"
+    ]
+  },
+  {
+    "id": "eyebeam",
+    "organizationId": "eyebeam",
+    "role": "Head of Artist Initiatives & Inclusion",
+    "start": "2020",
+    "end": "2024",
+    "tags": [
+      "leadership",
+      "communications",
+      "arts"
+    ]
+  },
+  {
+    "id": "processing",
+    "organizationId": "processing-foundation",
+    "role": "Fellow & Mentor",
+    "start": "2021",
+    "end": "2023",
+    "tags": [
+      "education",
+      "accessibility"
+    ]
+  },
+  {
+    "id": "lincoln",
+    "organizationId": "lincoln-center",
+    "role": "Digital Accessibility Fellow",
+    "start": "2019",
+    "end": "2020",
+    "tags": [
+      "accessibility"
+    ]
+  }
 ]

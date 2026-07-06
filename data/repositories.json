@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "id": "prof",
+    "name": "professional-profile",
+    "status": "planned"
+  },
+  {
+    "id": "omoluabi",
+    "name": "omoluabi"
+  },
+  {
+    "id": "esl",
+    "name": "Earth-Sensors-Lab"
+  }
+]

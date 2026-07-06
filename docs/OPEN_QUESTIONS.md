@@ -5,3 +5,9 @@
   drop has defined a dedicated directory or data record for any of them yet.
   `index.html` currently points "Contact" at `/about/` as a placeholder.
   AWAITING FRAGMENT until a directory/data model is specified.
+
+- Drop 04's `projects.json` includes "Accessible by Design"
+  (`ukadike/accessible-by-design-prototyping`), but Drop 04's `repositories.json`
+  has no matching entry — only `prof`, `omoluabi`, and `esl` are defined. Its
+  `repositoryId` is set to `null` pending a repositories.json update.
+  AWAITING FRAGMENT.

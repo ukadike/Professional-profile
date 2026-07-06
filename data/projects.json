@@ -1,1 +1,33 @@
-[]
+[
+  {
+    "id": "omoluabi",
+    "title": "Omoluabi",
+    "repo": "ukadike/omoluabi",
+    "repositoryId": "omoluabi",
+    "themes": [
+      "editorial intelligence",
+      "responsible ai"
+    ]
+  },
+  {
+    "id": "earth-sensors-lab",
+    "title": "Earth Sensors Lab",
+    "repo": "ukadike/Earth-Sensors-Lab",
+    "repositoryId": "esl",
+    "themes": [
+      "STEAM",
+      "environment",
+      "accessibility"
+    ]
+  },
+  {
+    "id": "accessible-by-design",
+    "title": "Accessible by Design",
+    "repo": "ukadike/accessible-by-design-prototyping",
+    "repositoryId": null,
+    "themes": [
+      "WCAG",
+      "design systems"
+    ]
+  }
+]
