@@ -1,0 +1,6 @@
+:root{--bg:#fff;--fg:#111;--accent:#2457ff}
+body{font:16px system-ui;background:var(--bg);color:var(--fg);margin:0;line-height:1.6}
+header,footer{padding:1rem;border-bottom:1px solid #ddd}
+main{max-width:70rem;margin:auto;padding:2rem}
+.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:1rem;top:1rem;background:#fff;padding:.5rem}
+a:focus{outline:3px solid var(--accent)}
