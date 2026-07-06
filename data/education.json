@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": "nyu-ba",
+    "institution": "New York University",
+    "degree": "BA",
+    "field": "Journalism & Psychology"
+  },
+  {
+    "id": "nyu-itp",
+    "institution": "New York University",
+    "degree": "MPS",
+    "field": "Interactive Telecommunications Program"
+  }
+]

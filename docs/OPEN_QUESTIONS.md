@@ -11,3 +11,10 @@
   has no matching entry — only `prof`, `omoluabi`, and `esl` are defined. Its
   `repositoryId` is set to `null` pending a repositories.json update.
   AWAITING FRAGMENT.
+
+- Drop 05's `CV_GENERATION_RULES.md` specifies generating an Executive Resume,
+  Communications Resume, Technical Resume, Academic CV, and Speaker Bio from
+  canonical JSON records. `talks.json`, `publications.json`, `awards.json`,
+  `fellowships.json`, and `media.json` are all still empty, so no CV/resume
+  generation is implemented yet — there is no source data to derive it from.
+  AWAITING FRAGMENT.
