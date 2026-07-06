@@ -31,3 +31,20 @@
   - `13_ACCESSIBILITY_ACCEPTANCE.md`: print-friendly CV not implemented (blocked
     on CV generation, above).
   - `16_ROADMAP_NEXT.md` frames these as drops 07–12. AWAITING FRAGMENT.
+
+- Drop 07's `career_case_studies.json` (record `ssl-founder`) lists
+  `professional-profile` in its `related` array, but no record with that ID
+  exists. The repositories.json entry for the profile repo has id `prof`
+  (name: "professional-profile"). Left as-authored rather than silently
+  remapped to `prof`; needs confirmation of the intended target ID.
+  The other five cross-links in this file resolve correctly.
+
+- Drop 07's `19_TODO_IMPORTS.md` lists priority imports still outstanding:
+  complete journalism career, Eyebeam achievements, SSL initiatives, talks,
+  publications, awards, fellowships. The underlying data has not been
+  provided yet (talks/publications/awards/fellowships JSON remain empty),
+  so these are backlog, not buildable. AWAITING FRAGMENT.
+
+- Note on shapes: `speaker_bios.json` is a single object (bio_100/bio_250/
+  topics), not an array of id-keyed records like the other data files.
+  Imported as-authored.

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "eyebeam-haii",
+    "title": "Head of Artist Initiatives & Inclusion",
+    "organization": "Eyebeam",
+    "period": "2020-2024",
+    "summary": "Led artist initiatives, inclusion strategy, partnerships, and public-facing communications across programs.",
+    "evidence": [
+      "program leadership",
+      "cross-functional collaboration",
+      "accessibility",
+      "communications"
+    ],
+    "related": [
+      "ssl-founder",
+      "processing",
+      "accessible-by-design"
+    ]
+  },
+  {
+    "id": "ssl-founder",
+    "title": "Founder & Executive Director",
+    "organization": "Small Systems Lab",
+    "period": "2023-Present",
+    "summary": "Founded a public-interest technology lab focused on accessibility, responsible AI, civic technology, and research.",
+    "related": [
+      "omoluabi",
+      "earth-sensors-lab",
+      "professional-profile"
+    ]
+  }
+]
