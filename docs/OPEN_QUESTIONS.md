@@ -32,12 +32,11 @@
     on CV generation, above).
   - `16_ROADMAP_NEXT.md` frames these as drops 07–12. AWAITING FRAGMENT.
 
-- Drop 07's `career_case_studies.json` (record `ssl-founder`) lists
-  `professional-profile` in its `related` array, but no record with that ID
-  exists. The repositories.json entry for the profile repo has id `prof`
-  (name: "professional-profile"). Left as-authored rather than silently
-  remapped to `prof`; needs confirmation of the intended target ID.
-  The other five cross-links in this file resolve correctly.
+- RESOLVED: Drop 07's `career_case_studies.json` (record `ssl-founder`)
+  originally listed `professional-profile` in its `related` array, which
+  matched no record. Remapped to `prof` (the repositories.json entry for
+  this repo, name: "professional-profile") so the cross-link resolves.
+  All six cross-links in this file now resolve.
 
 - Drop 07's `19_TODO_IMPORTS.md` lists priority imports still outstanding:
   complete journalism career, Eyebeam achievements, SSL initiatives, talks,
