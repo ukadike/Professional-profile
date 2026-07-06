@@ -1,0 +1,39 @@
+name: Validate JSON
+
+# Implements the "Validate JSON" step of docs/14_GITHUB_ACTIONS_PLAN.md.
+# The remaining planned steps (broken-link check, Pages build, accessibility
+# checks, sitemap, schema-card validation) are not yet implemented — see
+# docs/OPEN_QUESTIONS.md.
+
+on:
+  push:
+    paths:
+      - "data/**.json"
+      - ".github/workflows/validate-json.yml"
+  pull_request:
+    paths:
+      - "data/**.json"
+  workflow_dispatch:
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate all data/*.json parse
+        run: |
+          python3 - <<'PY'
+          import json, glob, sys
+          bad = []
+          for f in sorted(glob.glob("data/*.json")):
+              try:
+                  json.load(open(f))
+                  print("ok  ", f)
+              except Exception as e:
+                  bad.append((f, str(e)))
+                  print("FAIL", f, e)
+          if bad:
+              print(f"\n{len(bad)} file(s) failed JSON validation")
+              sys.exit(1)
+          print(f"\nAll {len(glob.glob('data/*.json'))} data files are valid JSON")
+          PY

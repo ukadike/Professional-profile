@@ -1,6 +1,68 @@
-:root{--bg:#fff;--fg:#111;--accent:#2457ff}
-body{font:16px system-ui;background:var(--bg);color:var(--fg);margin:0;line-height:1.6}
-header,footer{padding:1rem;border-bottom:1px solid #ddd}
-main{max-width:70rem;margin:auto;padding:2rem}
-.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:1rem;top:1rem;background:#fff;padding:.5rem}
-a:focus{outline:3px solid var(--accent)}
+/* Design tokens — see docs/11_DESIGN_TOKENS.md */
+:root {
+  --background: #fff;
+  --foreground: #111;
+  --muted: #6f6f6f;
+  --accent: #2457ff;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+
+  --radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111;
+    --foreground: #f4f4f4;
+    --muted: #a5a5a5;
+    --accent: #7c9cff;
+  }
+}
+
+body {
+  font: 16px/1.6 system-ui, sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+  margin: 0;
+}
+
+header, footer {
+  padding: var(--space-3);
+  border-bottom: 1px solid var(--muted);
+}
+
+main {
+  max-width: 70rem;
+  margin: auto;
+  padding: var(--space-5);
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+.skip-link:focus {
+  left: var(--space-3);
+  top: var(--space-3);
+  background: var(--background);
+  padding: var(--space-2);
+}
+
+a:focus {
+  outline: 3px solid var(--accent);
+}
+
+/* Motion reduced by default — see docs/11_DESIGN_TOKENS.md */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
