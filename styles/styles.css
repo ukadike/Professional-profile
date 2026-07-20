@@ -13,6 +13,10 @@
   --space-6: 48px;
 
   --radius: 8px;
+
+  /* Let the UA adapt native form/scrollbar colors to the active scheme; the
+     dark-mode variables below are the source of truth for authored colors. */
+  color-scheme: light dark;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,6 +46,28 @@ main {
   padding: var(--space-5);
 }
 
+/* Explicit link color: without this, the UA stylesheet's default link
+   color does not track prefers-color-scheme, and dark-mode links can drop
+   below the 4.5:1 text-contrast minimum against --background. --accent
+   is verified >=4.5:1 against --background in both light and dark. */
+a {
+  color: var(--accent);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+}
+.nav-list li + li::before {
+  content: "|";
+  margin-right: var(--space-2);
+  color: var(--muted);
+}
+
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -51,6 +77,7 @@ main {
   top: var(--space-3);
   background: var(--background);
   padding: var(--space-2);
+  z-index: 100;
 }
 
 a:focus {
